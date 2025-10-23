@@ -1,0 +1,96 @@
+/* -------- styles.css (page look & feel) -------- */
+
+/* Page header */
+.header,
+.page-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+.header .container,
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: 1rem 0;
+}
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Main content wrapper */
+main {
+  padding: 2rem 0 3rem;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.04);
+}
+.card + .card { margin-top: 1rem; }
+
+/* Headings */
+h1 { font-size: 2rem; font-weight: 800; margin-bottom: .5rem; }
+h2 { font-size: 1.5rem; font-weight: 700; margin: 1.25rem 0 .5rem; }
+p  { margin: .5rem 0; color: #1f2937; }
+
+/* Buttons */
+.button, button, [type="submit"] {
+  appearance: none;
+  border: 1px solid #11182720;
+  background: #111827;
+  color: #fff;
+  border-radius: 10px;
+  padding: .6rem .9rem;
+  cursor: pointer;
+}
+.button:hover, button:hover, [type="submit"]:hover {
+  filter: brightness(1.06);
+}
+.button--light {
+  background: #fff;
+  color: #111827;
+}
+
+/* Forms */
+input, select, textarea {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: .6rem .75rem;
+  background: #fff;
+}
+label { display: inline-block; margin: .4rem 0 .2rem; font-weight: 600; }
+
+/* Utility layout */
+.stack   > * + * { margin-top: 1rem; }
+.cluster { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+
+/* Tweet list (if your page has tweets.html) */
+.tweets {
+  list-style: none;
+  padding: 0;
+}
+.tweets li {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: .85rem 1rem;
+}
+.tweets li + li { margin-top: .75rem; }
+.tweet__meta { color: #6b7280; font-size: .9rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}

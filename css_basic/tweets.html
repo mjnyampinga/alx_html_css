@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tweets</title>
+
+  <!-- required by the task -->
+  <link href="base.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="container stack" style="padding-block:1.25rem;">
+    <h1>Tweets</h1>
+    <p class="muted">A tiny timeline mockup—pure HTML & CSS.</p>
+  </header>
+
+  <main class="container stack" aria-label="Timeline">
+    <article class="tweet card">
+      <div class="tweet__meta cluster">
+        <img class="tweet__avatar" src="https://via.placeholder.com/48" alt="Ada Lovelace avatar" />
+        <div>
+          <strong>Ada Lovelace</strong> <span class="muted">@ada — <time datetime="2025-10-01T09:12">Oct 1</time></span>
+        </div>
+      </div>
+      <p class="tweet__text">
+        Mathematics is the poetry of logical ideas. Writing the first algorithm taught me that
+        <em>clarity</em> beats cleverness.
+      </p>
+      <nav class="tweet__actions cluster" aria-label="Tweet actions">
+        <a href="#" class="action">Reply</a>
+        <a href="#" class="action">Retweet</a>
+        <a href="#" class="action">Like</a>
+      </nav>
+    </article>
+
+    <article class="tweet card">
+      <div class="tweet__meta cluster">
+        <img class="tweet__avatar" src="https://via.placeholder.com/48" alt="Grace Hopper avatar" />
+        <div>
+          <strong>Grace Hopper</strong> <span class="muted">@grace — <time datetime="2025-10-05T14:20">Oct 5</time></span>
+        </div>
+      </div>
+      <p class="tweet__text">
+        “The most dangerous phrase in the language is: <q>We’ve always done it this way.</q>”
+      </p>
+      <nav class="tweet__actions cluster" aria-label="Tweet actions">
+        <a href="#" class="action">Reply</a>
+        <a href="#" class="action">Retweet</a>
+        <a href="#" class="action">Like</a>
+      </nav>
+    </article>
+
+    <article class="tweet card">
+      <div class="tweet__meta cluster">
+        <img class="tweet__avatar" src="https://via.placeholder.com/48" alt="Linus Torvalds avatar" />
+        <div>
+          <strong>Linus Torvalds</strong> <span class="muted">@linus — <time datetime="2025-10-09T08:03">Oct 9</time></span>
+        </div>
+      </div>
+      <p class="tweet__text">
+        Talk is cheap. Show me the code. Also: show me the tests 😉
+      </p>
+      <nav class="tweet__actions cluster" aria-label="Tweet actions">
+        <a href="#" class="action">Reply</a>
+        <a href="#" class="action">Retweet</a>
+        <a href="#" class="action">Like</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="container muted" style="padding-block:2rem;">
+    <small>Sample tweets page for <code>css_basic</code>.</small>
+  </footer>
+</body>
+</html>
